@@ -1,3 +1,5 @@
+#We'll use the names defined in the enumerable to return 
+# a specific status code whenever necessary in our code
 from enum import Enum
 
 class HttpStatus(Enum):

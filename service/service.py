@@ -89,7 +89,7 @@ class NotificationList(Resource):
         parser=reqparse.RequestParser()
         parser.add_argument('message', type=str, required=True, help='Message cannot be blank!')
         parser.add_argument('ttl', type=int, required=True, help='Time to live cannot be blank!')
-        parser.add_arguement('notification_category', type=str, required=True, help='Notification category cannot be blank!')
+        parser.add_argument('notification_category', type=str, required=True, help='Notification category cannot be blank!')
         args=parser.parse_args()
         notification=NotificationModel(
             message=args['message'],
